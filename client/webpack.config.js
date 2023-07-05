@@ -30,7 +30,6 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
       }),
-      //TODO finish Manifest with info from screenshots
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,

@@ -11,8 +11,10 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
-      //editor?
+      install: './src/js/install.js',
+      //need these?
+      editor: './src/js/editor.js',
+      header: './src/js/header.js',
     },
     output: {
       filename: '[name].bundle.js',
@@ -28,13 +30,15 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
       }),
-      //TODO finish Manifest 
+      //TODO finish Manifest with info from screenshots
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'JATE',
-        description: 'A simple text editor to use on- and off-line.',
+        short_name: 'J.A.T.E',
+        description: 'Take notes with JavaScript syntax highlighting!',
+        theme_color: '#225ca3',
+        background_color: '#225ca3',
         start_url:'./',
         publicPath:'./',
         icons: [

@@ -11,3 +11,5 @@ J.A.T.E is exactly what it stands for - Just Another Text Editor. It's a PWA, so
 
 ## Deployed Application
 
+https://dry-brook-83037-97e694e466dc.herokuapp.com/
+
